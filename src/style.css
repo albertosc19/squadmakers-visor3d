@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#ui-panel {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 300px;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+#ui-panel h2,
+#ui-panel h3 {
+  margin-top: 0;
+}
+
+#ui-panel section {
+  margin-bottom: 18px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.checkbox-row span {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  transform: scale(1.15);
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+#ui-panel input[type="number"],
+#ui-panel button {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #111827;
+  color: #e5e7eb;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#ui-panel input[type="number"]::placeholder {
+  color: #94a3b8;
+}
+
+#ui-panel button {
+  cursor: pointer;
+  background: #2563eb;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+#ui-panel button:hover {
+  background: #1d4ed8;
+}
+
+#status {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #e2e8f0;
+}
