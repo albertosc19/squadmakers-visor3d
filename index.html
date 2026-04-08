@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visor 3D geoespacial</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <aside id="ui-panel">
+      <h2>Visor 3D geoespacial para Squadmakers</h2>
+
+      <section>
+        <h3>Modelos</h3>
+
+        <label class="checkbox-row" for="toggle-n720">
+          <span>N720</span>
+          <input type="checkbox" id="toggle-n720" checked />
+        </label>
+
+        <label class="checkbox-row" for="toggle-rse">
+          <span>RSE</span>
+          <input type="checkbox" id="toggle-rse" checked />
+        </label>
+
+        <button id="frame-all">Encuadrar todo</button>
+        <button id="frame-n720">Encuadrar N720</button>
+        <button id="frame-rse">Encuadrar RSE</button>
+      </section>
+
+      <section>
+        <h3>Crear marcador (coordenadas originales)</h3>
+        <input id="input-x" type="number" step="any" placeholder="X" />
+        <input id="input-y" type="number" step="any" placeholder="Y" />
+        <input id="input-z" type="number" step="any" placeholder="Z" />
+        <button id="add-marker">Añadir marcador</button>
+      </section>
+
+      <section>
+        <h3>Estado</h3>
+        <div id="status">Cargando modelos...</div>
+      </section>
+    </aside>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
